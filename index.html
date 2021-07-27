@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- custom css -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  <!-- leafletjs Stylesheet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <!-- leafletjs javaScript -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <!-- header section -->
+  <header>
+    <h1>IP Address Tracker</h1>
+    <form>
+      <div class="form-group">
+        <div class="form-input">
+          <input type="text" class="search-ip-domain" placeholder="Search for any IP address or domain">
+        </div>
+        <button type="submit" class="search-btn">
+          <img src="images/icon-arrow.svg" alt="btn-image">
+        </button>
+      </div>
+    </form>
+    <div id="ip-details">
+      <div class="ip-details-list">
+        <div class="ip-address">
+          <p>IP Address</p>
+          <p class="ip-number">192.212.174.101</p>
+        </div>
+    
+        <div class="ip-location">
+          <p>Location</p>
+          <p class="location">Brooklyn, NY 10001</p>
+        </div>
+    
+        <div class="ip-timezone">
+          <p>Timezone</p>
+          <p class="timezone">UTC -05:00</p>
+        </div>
+    
+        <div class="ip-isp">
+          <p>ISP</p>
+          <p class="isp">SpaceX Starlink</p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- map section -->
+  <section id="map-deatils">
+    <!-- <div id="mapid"></div> -->
+  </section>
+
+  <script src="js/app.js"></script>
+
+    <!-- UTC add offset value dynamically using the API -->
+  <!-- ISP -->
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
