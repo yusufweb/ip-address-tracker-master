@@ -87,7 +87,7 @@ div#ip-details {
     border-radius: 15px;
     top: 165px;
     padding: 2em;
-    box-shadow: 0 4px 0 1px #ddd;
+    box-shadow: 1px 14px 40px -22px hsl(180, 29%, 50%);
     text-align: center;
     z-index: 100;
 }
