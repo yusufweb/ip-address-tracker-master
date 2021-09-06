@@ -10,6 +10,7 @@ window.onload = function() {
     fetch(api).then(response => {
         return response.json();
     }).then(data => {
+        console.log(data.ip);
         getLocation(data.ip)
     });
 }
@@ -54,5 +55,11 @@ displayIpDetails = (obj) => {
 
 searchBtn.addEventListener("click", event => {
     event.preventDefault();
+    if(searchQuery.value == "") 
+    {
+        alert("Error: Empty Query is not allowed"); 
+        return;
+    }
     getLocation(searchQuery.value);
+    searchQuery.value = "";
 });
